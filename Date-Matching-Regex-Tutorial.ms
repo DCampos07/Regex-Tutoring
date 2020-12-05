@@ -1,20 +1,20 @@
-# HTML Tag Regex Tutorial (replace with your title)
+# Date Regex Tutorial
 
 This document is meant to explain the details of how a regular expression works. We will explore the inner workings of a regular 
-expression using regex to generate a detailed explanation of how an HTML tag and its components works.
+expression using regex to generate a detailed explanation of how a date validator and its components works.  We will break down
+the code and all of its assects piece by piece in order to create a complete understading of how this particular regular expression
+can validate a date entry.
 
 We will be using the following HTML tag to break down each one of its parts and components to define how they work and what part they
 play in the context of the expression.
 
-/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
-
 ## Summary
 
-We will be evaluation the following regular expression and how it'S Hex components function.
+The following evaluation of this regular expression and how each individual componet works together in order to make the regular
+expression match a valid date for your code will clarify what each character, group, quantifier or alterations does on an individual 
+basis to make it work as a group.
 
-/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
-
-The below discription will explain about the anchors, character classes, quantifiers, and OR operator.
+^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$
 
 ## Table of Contents
 
