@@ -44,8 +44,7 @@ expression to anchor the first *capturing group* `(`. While `$` is used at the e
 ### Quantifiers
 
 In the case of the string we are using as an example we didn't use any quantifiers, but they can be useful to increase the numeber 
-of comparisons the engine has to perform.  Quantifiers in regular expressions according to [Microsoft](https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions#:~:text=Quantifiers%20specify%20how%20many%20instances,NET.&text=Match%20zero%20or%20more%20times.)
->specify how many instances of a character, group, or character class must be present in the input for a match to be found>. Here are 
+of comparisons the engine has to perform.  Quantifiers in regular expressions according to [Microsoft](https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-inregularexpressions#:~:text=Quantifiers%20specify%20how%20many%20instances,NET.&text=Match%20zero%20or%20more%20times.) >specify how many instances of a character, group, or character class must be present in the input for a match to be found>. Here are 
 some examples of the most common types of quantifiers `*,+ ?, {n}, {n,}, {n,m}`.
 
 ### OR Operator
@@ -73,7 +72,9 @@ u, and y`.  Each one of them has a different function which can be found in the 
 
 ### Grouping and Capturing
 
-Groups and Capturing is done using a parentheses `()`.
+Groups and Capturing is done using only a parentheses `()`.  We do this in order to separate an expresion so we can either quantifity it or to restrict the alternation.  In the below code we can see how we capture and match 2 parts of the same code string.
+
+`(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])`
 
 ### Bracket Expressions
 
