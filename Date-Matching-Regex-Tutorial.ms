@@ -61,8 +61,10 @@ According to the [Regular-Expressions.info page](https://www.regular-expressions
 sets >tell the regex engine to match only one out of several characters.> This is done by inserting the characters being searched 
 for inside the square brackets `[]`.  
 
-In the below code snippet we are telling the engine to only search for characters between 1 through 9.
-`[1-9]`.
+In the below code snippet we are telling the engine to search for a single character between 1 through 9, but you are also telling it to look for one or more characters in the lower and upper case range between a through z.
+`[1-9azAZ]`.
+
+In this much simpler code `\d` we are matching any digit character 0-9, like for example 3.  But in order to match 33 we would need to write this `\d\d`, then we would get a double digit response if available.
 
 ### Flags
 
@@ -72,11 +74,17 @@ u, and y`.  Each one of them has a different function which can be found in the 
 
 ### Grouping and Capturing
 
-Groups and Capturing is done using only a parentheses `()`.  We do this in order to separate an expresion so we can either quantifity it or to restrict the alternation.  In the below code we can see how we capture and match 2 parts of the same code string.
+Groups and Capturing is done using only a parentheses `()`.  We do this in order to separate an expresion so we can either quantifity it or to restrict the alternation.  In the below code we can see how we captured and matched 2 parts of the same code string.
 
 `(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])`
 
 ### Bracket Expressions
+
+Bracket expressions `[]` are a part of charactar classes.  They are used to match any character in the set, they set aside ranges in a search.
+
+Let's take for instance this code `(0[1-9]|1[012])` we are giving the following ranges `[1-9]` and `[012]`. 
+
+
 
 ### Greedy and Lazy Match
 
