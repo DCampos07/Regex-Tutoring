@@ -28,7 +28,7 @@ The following evaluation of this regular expression and how each individual comp
 
 ### Anchors (`^,$`)
 
-According to the [Regular-Expressions.info](https://www.regular-expressions.info/anchors.html) page anchors don't belong to any character or group, but are a product all on their own. While using JavaScript they are meant to >*match a position before, after, or between characters*<.
+According to the [Regular-Expressions.info](https://www.regular-expressions.info/anchors.html) page anchors don't belong to any character or group, but are a product all on their own. While using JavaScript they are meant to ***match a position before, after, or between characters***.
 
 In the example I provided above you can see the caret `^` being used at the bigining of the  expression to anchor the first *capturing group* `(`. While `$` is used at the end to anchor the end of string.
 
