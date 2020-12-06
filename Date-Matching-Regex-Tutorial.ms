@@ -100,4 +100,4 @@ Look-ahead and look-behind, or more commonly known as look-around is a simpe way
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This short tutorial was brought to you by Damaris Campos.  I am currently a student at UCF looking to earn a Full-Stack Web Developer title.  You can see what other projects I've worked on since I started this course in my [GitHub](https://github.com/DCampos07)
