@@ -88,9 +88,11 @@ In the case of our expression we are only using the pipe symbol `|`, but we can 
 
 ### Boundaries
 
-
+Boundaries are slightly different than anchors in that an anchor tells you where a string starts and ends, but a boundry does not. A boundry are used to ensure what can be matched to the left and to the right of the current position. We didn't use any boundries in our string, but according to [Regex.com](https://www.rexegg.com/regex-boundaries.html#anchors) >Anchors assert that the current position in the string matches a certain position: the beginning, the end, or in the case of \G the position immediately following the last match. In contrast, boundaries make assertions about what can be matched to the left and right of the current position.>
 
 ### Back-references
+
+
 
 ### Look-ahead and Look-behind
 
