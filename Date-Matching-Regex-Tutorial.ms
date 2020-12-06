@@ -43,14 +43,12 @@ expression to anchor the first *capturing group* `(`. While `$` is used at the e
 
 ### Quantifiers
 
-In the case of the string we are using as an example we didn't use any quantifiers, but they can be useful to increase the numeber 
-of comparisons the engine has to perform.  Quantifiers in regular expressions according to [Microsoft](https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-inregularexpressions#:~:text=Quantifiers%20specify%20how%20many%20instances,NET.&text=Match%20zero%20or%20more%20times.) >specify how many instances of a character, group, or character class must be present in the input for a match to be found>. Here are 
+In the case of the string we are using as an example we only used one quantifier which is the pipe symbol `|`, but they can be useful to increase the numeber of comparisons the engine has to perform.  Quantifiers in regular expressions according to [Microsoft](https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-inregularexpressions#:~:text=Quantifiers%20specify%20how%20many%20instances,NET.&text=Match%20zero%20or%20more%20times.) >specify how many instances of a character, group, or character class must be present in the input for a match to be found>. Here are 
 some examples of the most common types of quantifiers `*,+ ?, {n}, {n,}, {n,m}`.
 
 ### OR Operator
 
-In the case of Operator/Alternation we used the `|` on four seperate occations.  This is because the pipe symbol or vertical bar matches
-the expression before or after it in the order in which it was written.  In the cropped version on my code seen below we can see that
+In the case of Operator/Alternation we used the `|` on four seperate occations.  This is because the pipe symbol or vertical bar matches the expression before or after it in the order in which it was written.  In the cropped version on my code seen below we can see that
 the vertical bar is being used to match first range to the second.
 
 `(0[1-9]|1[012])`
@@ -82,13 +80,15 @@ Groups and Capturing is done using only a parentheses `()`.  We do this in order
 
 Bracket expressions `[]` are a part of charactar classes.  They are used to match any character in the set, they set aside ranges in a search.
 
-Let's take for instance this code `(0[1-9]|1[012])` we are giving the following ranges `[1-9]` and `[012]`. 
-
-
+Let's take for instance this piece of code `(0[1-9]|1[012])` we are giving the following ranges `[1-9]` and `[012]` to look for, while the 0 and the 1 are a given and would stay in place.
 
 ### Greedy and Lazy Match
 
+In the case of our expression we are only using the pipe symbol `|`, but we can go over the context of what this means.  A normal quantifier is usually described as greedy as it tries to make as many matches as possible.  On the other hand a lazy quantifier means that the regex expression tries to make the least amount of matches possible.  Some of greedy quantifiers are `+,0,`, the most popular of the lazy quatifiers is `?`.  IF you are interest in continuing to learn more about greedy and lazy matches you can visit [Jascript.info]{https://javascript.info/regexp-greedy-and-lazy}.
+
 ### Boundaries
+
+
 
 ### Back-references
 
