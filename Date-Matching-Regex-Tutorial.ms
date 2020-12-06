@@ -96,7 +96,7 @@ A back-reference is a useful tool to use when you want to reuse or reference a g
 
 ### Look-ahead and Look-behind
 
-
+Look-ahead and look-behind, or more commonly known as look-around is a simpe way of saying that you want your code to look around it and make a match (or not), but only returns the results. This is better explained in [Regular-Expressions.info](https://www.regular-expressions.info/lookaround.html).  We didn't use any look-around in our string, but it migh be useful in the future.
 
 ## Author
 
