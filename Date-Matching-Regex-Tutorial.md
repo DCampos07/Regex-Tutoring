@@ -34,7 +34,7 @@ In the example I provided above you can see the caret `^` being used at the bigi
 
 ### Quantifiers
 
-In the case of the string we are using as an example we only used one quantifier which is the pipe symbol `|`, but they can be useful to increase the number of comparisons the engine has to perform. Quantifiers in regular expressions according to [Microsoft(https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers#:~:text=Quantifiers%20specify%20how%20many%20instances,NET.&text=Match%20zero%20or%20more%20times.) *"specify how many instances of a character, group, or character class must be present in the input for a match to be found"*. Here are some examples of the most common types of quantifiers `*,+ ?, {n}, {n,}, {n,m}`
+In the case of the string we are using as an example we only used one quantifier which is the pipe symbol `|`, but they can be useful to increase the number of comparisons the engine has to perform. Quantifiers in regular expressions according to [Microsoft(https://docs.microsoft.com/en-us/dotnet/standard/base-types/quantifiers-in-regular-expressions#:~:text=Quantifiers%20specify%20how%20many%20instances,NET.&text=Match%20zero%20or%20more%20times) *"specify how many instances of a character, group, or character class must be present in the input for a match to be found"*. Here are some examples of the most common types of quantifiers `*,+ ?, {n}, {n,}, {n,m}`
 
 ### OR Operator
 
